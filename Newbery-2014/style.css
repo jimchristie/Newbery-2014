@@ -1,0 +1,277 @@
+/*
+Theme Name:     2014 Newbery
+Theme URI:      http://www.dbrl.org
+Description:    Child theme for the newbery.dbrl.org based on Virtue theme
+Author:         Jim Christie
+Template:       virtue
+Version:        0.1.0
+*/
+
+@import url("../virtue/assets/css/skins/default.css");
+
+body {
+	background-color: #7ca0c3;
+}
+
+
+.brand {
+	display: block;
+}
+
+.col-md-12>#logo {
+	text-align: left;
+}
+
+#nav-main ul li {
+	background-color: #2d5c88;
+	/*border: 1px solid #2d5c88;*/
+	border-radius: 5px;
+}
+/*#nav-main ul li:hover {
+	border-radius: 5px;
+	border-color: #2d5c88;
+}*/
+
+#nav-main ul.sf-menu a:hover{
+	background-color: #0f3458;
+	color: #fff !important;
+	border-radius:5px;
+}
+.sf-menu a {
+	transition: all 0 ease 0;
+	-webkit-transition: all 0 ease 0;
+	-moz-transition: all 0 ease 0;
+	-o-transition: all 0 ease 0;
+}
+
+.col-md-12{
+	padding: 0;
+}
+
+.entry-meta .categories-links {
+	display: none;
+}
+
+.postlist .postmeta {
+	margin-right: 15px;
+}
+
+.postcommentscount a {
+	color: #2d5c88;
+}
+
+.postcommentscount a:hover {
+	color: #6c8dab;
+}
+
+.call_number, .on_order {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.call_number {
+	/*background-color: #fffea5;*/
+	background-color: rgb(200, 215, 235);
+	/*background-color: rgba(124,160,195,0.4);*/
+}
+
+.on_order {
+	background-color: rgb(140, 170, 195);
+	/*background-color: rgba(45,92,136, 0.5);*/
+	color: #fff;
+}
+
+/* for image/title pairs on "2013 Overview" page */
+.image_title {
+	width: 40%;
+	margin-right: 4.5%;
+	margin-left: 4.5%;
+	margin-bottom: 1em;
+	display: inline-block;
+	vertical-align: top;
+}
+.kad-sidebar {
+	padding: 0.25em 1em 1em 1em;
+	width: 100%;
+}
+
+.kad-sidebar, .widget, .widget h3 {
+	background-color: #2d5c88;
+	/*padding-left: 1em;
+	padding-right: 1em; */
+	color: #fff;
+}
+
+.widget a, .sidebar .widget_categories li a {
+	color: #fff;
+	display: block;
+	margin-bottom: 0.5em;
+	padding-left: 5px;
+	border: 1px #7ca0c3 solid;
+	border-radius: 3px;
+}
+
+.widget a:hover, .sidebar .widget_categories li a:hover {
+	background-color: #0f3458;
+	border: 1px #0f3458 solid;
+}
+.widget-inner ol, .widget-inner ul {
+	margin-left: 0;
+}
+
+.widget .book_list ol {
+	list-style-type: decimal;
+	margin-left: 20px;
+}
+
+.widget .book_list li {
+	padding: 0;
+}
+
+.sidebar a {
+	color: #fff !important;
+}
+
+.sidebar .widget-inner li {
+	border-bottom: none;
+}
+
+.category-archive .entry-header .entry-title {
+	font-size: 32px;
+}
+
+.category-archive .entry-header .entry-meta {
+	display: none;
+}
+
+.site-info a {
+	display: none;
+}
+
+.entry-content img.alignleft {
+    margin-left: 0;
+}
+
+.quick-chat-right-link a {
+	padding: 5px;
+	border: 1px solid #2d5c88;
+	margin-left: 5px;
+	border-radius: 3px;
+}
+.quick-chat-right-link a:hover{
+	border-color: #6c8dab;
+}
+
+.footercredits strong{
+	color: #555;
+}
+
+/***** Media Queries *****/
+
+@media (max-width: 767px){
+	.row {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.postlist .postmeta {
+		margin-right: 20px;
+	}
+	.postlist .postcontent {
+		padding-left: 10px;
+	}
+	.postlist .postcontent p {
+		margin: 0 10px 10px 0;
+	}
+
+}
+	
+@media (min-width: 768px){
+	
+	.contentclass {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+	}
+	.logocase {
+		background-image: url('http://newbery.dbrl.org/wp-content/uploads/2014/08/Newbury-2014-header-background.jpg');
+		background-position: right bottom;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		width: 100%;
+		cursor: pointer;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	/*.wrap {
+		background-color: #7ca0c3;
+	}*/
+	.main {
+		background-color: #fff; 
+	}
+	.container, .wide #wrapper.container {
+		width:750px !important;
+	}
+
+}
+
+@media (max-width: 991px){
+	.nav-trigger .nav-trigger-case {
+		position: static;
+		display: block;
+		width: 100%;
+	}
+
+}
+
+@media (width: 992px){
+	header #nav-main{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+}
+@media (min-width: 992px){
+	.logocase {
+		background-position: right center;
+	}
+	#nav-main ul.sf-menu {
+		display: block;
+	}
+	.nav-trigger .nav-trigger-case {
+		display: none;
+	}
+	.container, .wide #wrapper.container {
+		width: 970px !important;
+	}
+	.kad-sidebar {
+		margin-right: 3%;
+		padding-bottom: 0.75em;
+		border-radius: 4px;
+	}
+	.contentclass {
+		padding-left: 1%;
+	}
+	.col-lg-3 {
+		width: 30.33333333333%;
+		float: right;
+	}
+}
+
+@media (min-width: 1200px){
+	.wide #wrapper.container {
+		width: 1200px !important;
+	}
+
+	.kad-sidebar {
+		margin-right: 1%;
+	}
+	.col-lg-9 {
+		width: 72%;
+	}
+	.col-lg-3 {
+		width: 27%;
+		float: right;
+	}
+
+	
+}
